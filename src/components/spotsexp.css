@@ -1,0 +1,181 @@
+.expcontainer {
+    display: flex;
+    flex-direction: column; 
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.exphead {
+    font-size: 20px;
+    background: linear-gradient(90deg, #f06, rgb(10, 17, 7), #06f);
+    background-size: 200% 100%;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: animatedText 5s linear infinite;
+    text-align: center;
+}
+
+.expsubhead {
+    font-size: 20px;
+    color: black;
+   
+    text-align: center;
+}
+
+@keyframes animatedText {
+    0% {
+        background-position: 200% 0;
+    }
+    100% {
+        background-position: -200% 0;
+    }
+}
+
+.expbox {
+    margin-top: 5%;
+    margin-bottom: -22px;
+    display: grid;
+    grid-gap: 22px;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainimg {
+
+    border-radius: 15px;
+    border: 2px solid rgb(10, 10, 10);
+    width: 500px;
+}
+
+#childA, #childB {
+    position: relative;
+    padding: 2px;
+    height: 130px;
+    width: 220px;
+}
+
+#childA {
+    margin-top: -32.38rem;
+    margin-left: 0.79rem;
+}
+
+#childB {
+    margin-top: -16.48rem;
+    margin-left: 15.79rem;
+}
+
+button {
+    height: 40px;
+    width: 30%;
+    border-radius: 40px;
+    box-shadow: 3px 5px 30px 5px rgb(75, 74, 74);
+}
+button:hover{
+    box-shadow: none;
+    transition: ease-in .2s;
+}
+.expbtn {
+    width: 40%;
+    margin-top: 20px; 
+    margin-left: 400px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+#next {
+    float: right;
+    background-color: rgb(113 243 113);
+}
+
+@media only screen and (max-width: 768px) {
+    .mainimg {
+        width: 100%;
+    }
+
+    #childA  {
+       
+        width: 50%;
+        height: 85px;
+        margin-top: -23.38rem;
+        margin-left: 0.21rem;
+    }
+    #childB{
+        width: 55%;
+        height: 100px;
+        margin-top: -12.48rem;
+        margin-left: 10rem;
+    }
+
+    .btn {
+        width: 80%;
+    }
+
+    .box {
+        margin-bottom: 10%;
+        grid-gap: 10px;
+    }
+
+    button {
+        width: 70%;
+    }
+    .exphead{
+        margin-top: 50px;
+        font-size: 15px;
+        /* margin-bottom: 50px; */
+    }
+    .expsubhead{
+        font-size: 16px;
+        text-align: center;
+        
+    }
+}
+
+
+
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+    border-radius: 10px;
+    color: black;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

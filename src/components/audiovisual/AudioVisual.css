@@ -1,0 +1,64 @@
+.audiovisual-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0f8ff;
+    min-height: 100vh;
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    color: #ff6347;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px #ffa07a;
+  }
+  
+  .levels-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .level-item {
+    margin: 10px 0;
+    padding: 10px 5px;
+  }
+  
+  .level-link {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #20b2aa;
+    background-color: #ffefd5;
+    padding: 10px 100px;
+
+    
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, background-color 0.3s;
+  }
+  
+  .level-link:hover {
+    transform: scale(1.1);
+    background-color: #ffdead;
+  }
+  
+  @media (max-width: 768px) {
+    .audiovisual-container{
+      overflow-x: hidden; /* Hide horizontal overflow */
+    overflow-y: auto; /* Enable vertical scrollbar if content overflows */
+    max-height: 80vh;
+    }
+    .title {
+      font-size: 2rem;
+    }
+  
+    .level-link {
+      font-size: 1.2rem;
+      padding: 8px 100px;
+    }
+  }
+  

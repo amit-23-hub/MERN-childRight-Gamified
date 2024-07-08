@@ -1,0 +1,83 @@
+/* General styles for navigation bar */
+.navigation-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 0 20px;
+  }
+  
+  .logosss-container {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+  }
+  
+ 
+  
+  .menutoggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 24px;
+  }
+  
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-links a i {
+    margin-right: 8px;
+  }
+  
+  /* Styles for smaller screens */
+  @media (max-width: 768px) {
+    .menutoggle {
+      display: block;
+      margin-left: 150px;
+      margin-bottom: 28px;
+      
+    }
+    .navigation-bar{
+      flex-direction: column;
+    align-items: flex-start;
+    }
+  
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .nav-links.open {
+      display: flex;
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: white;
+      font-size: 24px;
+
+    }
+  
+    .nav-links a {
+      width: 100%;
+      text-align: center;
+      padding: 5px 0;
+      font-size: 15px;
+    }
+  }
+  

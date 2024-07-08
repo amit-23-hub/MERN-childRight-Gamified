@@ -1,0 +1,107 @@
+.dictcontainer{
+    background-color:#46465f;
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+    box-sizing: border-box;
+    position: relative;
+    /* background: url('img2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover; */
+    }
+    
+    .dictBox{
+    position: absolute;
+      margin-top: 6%;
+      margin-left: 23%;
+        text-align: center;
+        justify-content: center;
+        padding: 2%;
+        height:auto;
+        width: 55%;
+        background-color: #7a7de4;
+        border: 2px solid black;
+        border-radius: 15px;
+        box-shadow: 3px 5px 9px 3px;
+    }
+    .dictBox h1{
+      overflow-y:hidden;
+      font-family: 'Barlow', sans-serif;
+      font-family: 'Dancing Script', cursive;
+      font-family: 'Pacifico', cursive;
+        font-size: 30px;
+    }
+    .dictBox input{
+      font-family: 'Barlow', sans-serif;
+      font-family: 'Dancing Script', cursive;
+      font-family: 'Pacifico', cursive;
+      font-size: 27px;
+      margin-top: 4%;
+      padding: 4px;
+      border-radius: 15px;
+      width: 45%;
+    
+    }
+    .srchbtn {
+        font-weight: 500;
+        padding: 10px 20px;
+        font-size: 1.5rem;
+        color: white;
+        margin-top: 5%;
+        margin-left: 2%;
+        cursor: pointer;
+        background-color: rgb(15, 75, 203);
+        width: 30%;
+        border: 2px solid black;
+        border-radius: 15px;
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+        transition: all 0.3s ease;
+      }
+      
+      .dictBox button:hover {
+        box-shadow: 0px 0px 15px #336995;
+      }
+      
+      @media screen and (max-width: 768px) {
+        .dictBox button {
+          width: 50%;
+        }
+      }
+    .dictBox p{
+      overflow-y:hidden;
+      font-family: 'Barlow', sans-serif;
+      font-family: 'Dancing Script', cursive;
+      font-family: 'Pacifico', cursive;
+      text-align: left;
+    font-size: 25px;
+    }
+    #phont{
+      font-family: sans-serif;
+      font-weight:600;
+    }
+    @media screen and (max-width:753px) {
+      .dictBox{
+        margin-top: 15%;
+        margin-left: 19%;
+        width: 60%;
+      }
+      .dictBox h1{
+        font-size: 22px;
+      }
+      .dictBox p{
+        font-size: 20px;
+      }
+      #phont{
+        font-size: 20px;
+      }
+      .dictBox button{
+        font-size: 20px;
+      }
+      .dictBox input{
+        font-size: 22px;
+        width: 55%;
+      }
+    
+    }
+    
+    
